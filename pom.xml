@@ -47,11 +47,11 @@
             <version>1.0.0-M6.1</version>
         </dependency>
         <!-- https://java2ai.com/docs/1.0.0-M6.1/models/ollama -->
-        <dependency>
-            <groupId>org.springframework.ai</groupId>
-            <artifactId>spring-ai-ollama-spring-boot-starter</artifactId>
-            <version>1.0.0-M6</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.ai</groupId>-->
+<!--            <artifactId>spring-ai-ollama-spring-boot-starter</artifactId>-->
+<!--            <version>1.0.0-M6</version>-->
+<!--        </dependency>-->
         <!-- LangChain4J DashScope -->
         <dependency>
             <groupId>dev.langchain4j</groupId>
@@ -76,20 +76,20 @@
             <version>1.0.0-M6</version>
         </dependency>
         <!-- 手动整合 PGVector 向量存储 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.ai</groupId>
-            <artifactId>spring-ai-pgvector-store</artifactId>
-            <version>1.0.0-M6</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-jdbc</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.postgresql</groupId>-->
+<!--            <artifactId>postgresql</artifactId>-->
+<!--            <scope>runtime</scope>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.ai</groupId>-->
+<!--            <artifactId>spring-ai-pgvector-store</artifactId>-->
+<!--            <version>1.0.0-M6</version>-->
+<!--        </dependency>-->
         <!-- 自动整合 PGVector 向量存储 -->
 <!--        <dependency>-->
 <!--            <groupId>org.springframework.ai</groupId>-->
@@ -152,6 +152,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
+                    <skip>true</skip>
                     <annotationProcessorPaths>
                         <path>
                             <groupId>org.projectlombok</groupId>

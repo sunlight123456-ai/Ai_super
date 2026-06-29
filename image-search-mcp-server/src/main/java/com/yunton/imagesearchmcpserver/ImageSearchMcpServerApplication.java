@@ -1,5 +1,4 @@
 package com.yunton.imagesearchmcpserver;
-
 import com.yunton.imagesearchmcpserver.tools.ImageSearchTool;
 import org.springframework.ai.tool.ToolCallbackProvider;
 import org.springframework.ai.tool.method.MethodToolCallbackProvider;
